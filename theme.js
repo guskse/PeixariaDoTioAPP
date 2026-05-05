@@ -1,11 +1,13 @@
 export const colors = {
-  primary: "#0EA5E9",
-  secondary: "#0284C7",
-  accent: "#22C55E",
-  background: "#F8FAFC",
+  primary: "#31805f",
+  secondary: "#205f42",
+  accent: "#48a77c",
+
+  background: "#F1FAF5",
   card: "#FFFFFF",
-  text: "#0F172A",
-  muted: "#64748B",
+
+  text: "#081C15",
+  muted: "#52796F",
 };
 
 export const spacing = {

@@ -1,13 +1,13 @@
 import { FlatList, Text } from "react-native";
 import Card from "../../components/Card";
-import { products } from "../../data/products";
+import { menu } from "../../data/products";
 import { colors, typography } from "../../theme";
 
 export default function Menu() {
   return (
     <FlatList
       contentContainerStyle={{ padding: 16 }}
-      data={products}
+      data={menu}
       keyExtractor={(item) => item.id.toString()}
       renderItem={({ item }) => (
         <Card>

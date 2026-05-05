@@ -8,14 +8,14 @@ import {
 } from "react-native";
 
 import ProductCard from "../../components/ProductCard";
-import { drinks, featured } from "../../data/products";
+import { desserts, drinks, featured } from "../../data/products";
 import { colors, spacing } from "../../theme";
 
 export default function Home() {
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../assets/images/peixaria-do-tio.png")}
+        source={require("../../assets/images/peixaria-do-tio2.png")}
         style={styles.image}
         resizeMode="cover"
       />
@@ -49,6 +49,19 @@ export default function Home() {
 
         <FlatList
           data={drinks}
+          keyExtractor={(item) => item.id.toString()}
+          numColumns={2}
+          scrollEnabled={false}
+          columnWrapperStyle={styles.row}
+          renderItem={({ item }) => <ProductCard item={item} />}
+        />
+      </View>
+
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Sobremesas</Text>
+
+        <FlatList
+          data={desserts}
           keyExtractor={(item) => item.id.toString()}
           numColumns={2}
           scrollEnabled={false}
