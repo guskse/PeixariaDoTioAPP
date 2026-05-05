@@ -13,7 +13,7 @@ export const recipes = [
   },
   {
     id: 3,
-    name: "Baião de 2",
+    name: "Baião de Dois",
     description:
       "Cozinhe o feijão fradinho com arroz no caldo de carne. Finalize com cubos de queijo coalho, carne de sol desfiada, coentro fresco e um fio generoso de manteiga de garrafa.",
   },
@@ -22,5 +22,11 @@ export const recipes = [
     name: "Farofa de Banana",
     description:
       "Refogue cebola e bacon na margarina até dourar. Adicione rodelas de banana-da-terra, frite levemente e misture a farinha de mandioca torrada, finalizando com sal e salsinha picada.",
+  },
+  {
+    id: 5,
+    name: "Salada vinagrete",
+    description:
+      "Mistura refrescante de tomate, cebola e pimentão picados em cubos pequenos, temperados com azeite, vinagre, sal e cheiro-verde.",
   },
 ];

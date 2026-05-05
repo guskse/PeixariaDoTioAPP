@@ -1,20 +1,15 @@
-import { useRouter } from "expo-router";
-import { Text, TouchableOpacity, View } from "react-native";
-import { recipes } from "../../../data/recipes";
+import RecipeCard from "@/components/RecipeCard";
+import { recipes } from "@/data/recipes";
+import { FlatList, View } from "react-native";
 
-export default function Recipes() {
-  const router = useRouter();
-
+export default function RecipesScreen() {
   return (
-    <View>
-      {recipes.map((r) => (
-        <TouchableOpacity
-          key={r.id}
-          onPress={() => router.push(`/recipes/${r.id}`)}
-        >
-          <Text style={{ padding: 16 }}>{r.name}</Text>
-        </TouchableOpacity>
-      ))}
+    <View style={{ flex: 1, padding: 16 }}>
+      <FlatList
+        data={recipes}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <RecipeCard item={item} />}
+      />
     </View>
   );
 }

@@ -30,7 +30,8 @@ const styles = StyleSheet.create({
     padding: spacing.sm,
   },
   price: {
+    fontSize: 16,
+    fontWeight: "bold",
     color: colors.accent,
-    marginTop: 8,
   },
 });

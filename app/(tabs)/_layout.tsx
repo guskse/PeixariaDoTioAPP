@@ -6,7 +6,7 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: colors.primary,
+        tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.muted,
         headerStyle: {
           backgroundColor: colors.primary,
@@ -21,13 +21,6 @@ export default function TabsLayout() {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" size={size} color={color} />
           ),
-        }}
-      />
-
-      <Tabs.Screen
-        name="recipes/[id]"
-        options={{
-          href: null,
         }}
       />
 
