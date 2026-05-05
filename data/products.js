@@ -2,28 +2,32 @@ export const featured = [
   {
     id: 1,
     name: "Tambaqui Assado",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
+    description:
+      "Tambaqui da região assado na brasa, servido com baião de dois, farofa crocante e vinagrete.",
     price: "R$ 80,00",
     image: require("../assets/images/mock.png"),
   },
   {
     id: 2,
     name: "Pirarucu Frito",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
+    description:
+      "Lombo de pirarucu frito na hora, acompanhado de baião de dois caseiro, farofa e salada.",
     price: "R$ 40,00",
     image: require("../assets/images/mock.png"),
   },
   {
     id: 3,
     name: "Sardinha",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
+    description:
+      "Porção de sardinhas fritas e crocantes. Acompanha guarnição completa de baião, farofa e vinagrete.",
     price: "R$ 15,00",
     image: require("../assets/images/sardinha.jpg"),
   },
   {
     id: 4,
     name: "Escabeche Caldo",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
+    description:
+      "Peixe cozido ao molho de tomate, pimentões e leite de coco. Acompanha baião de dois e guarnições.",
     price: "R$ 90,00",
     image: require("../assets/images/escabeche.jpg"),
   },
@@ -33,14 +37,16 @@ export const drinks = [
   {
     id: 5,
     name: "Suco de Cupuaçu",
-    description: "1L de suco de cupuaçu",
+    description:
+      "Suco natural da fruta, refrescante e cremoso. Jarra de 1 litro.",
     price: "R$ 10,00",
     image: require("../assets/images/suco-de-cupuacu.jpg"),
   },
   {
     id: 6,
     name: "Suco de Açaí",
-    description: "1L de suco de açaí",
+    description:
+      "Açaí regional batido e gelado, puro sabor da Amazônia. Jarra de 1 litro.",
     price: "R$ 12,00",
     image: require("../assets/images/suco-de-acai.jpeg"),
   },
@@ -50,74 +56,19 @@ export const desserts = [
   {
     id: 7,
     name: "Pudim",
-    description: "Pudim de leite condensado",
+    description:
+      "Clássico pudim de leite condensado com calda de caramelo artesanal.",
     price: "R$ 8,00",
     image: require("../assets/images/pudim-de-leite-condensado.jpeg"),
   },
   {
     id: 8,
     name: "Sorvete de Morango",
-    description: "Sorvete de morango",
+    description: "Duas bolas de sorvete de morango cremoso.",
     price: "R$ 3,00",
     image: require("../assets/images/sorvete-de-morango.jpeg"),
   },
 ];
 
-export const menu = [
-  {
-    id: 1,
-    name: "Tambaqui Assado",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
-    price: "R$ 80,00",
-    image: require("../assets/images/mock.png"),
-  },
-  {
-    id: 2,
-    name: "Pirarucu Frito",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
-    price: "R$ 40,00",
-    image: require("../assets/images/mock.png"),
-  },
-  {
-    id: 3,
-    name: "Sardinha",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
-    price: "R$ 15,00",
-    image: require("../assets/images/sardinha.jpg"),
-  },
-  {
-    id: 4,
-    name: "Escabeche Caldo",
-    description: "Acompanha 500g de baião de dois, farofa, salada vinagrete.",
-    price: "R$ 90,00",
-    image: require("../assets/images/escabeche.jpg"),
-  },
-  {
-    id: 5,
-    name: "Suco de Cupuaçu",
-    description: "1L de suco de cupuaçu",
-    price: "R$ 10,00",
-    image: require("../assets/images/suco-de-cupuacu.jpg"),
-  },
-  {
-    id: 6,
-    name: "Suco de Açaí",
-    description: "1L de suco de açaí",
-    price: "R$ 12,00",
-    image: require("../assets/images/suco-de-acai.jpeg"),
-  },
-  {
-    id: 7,
-    name: "Pudim",
-    description: "Pudim de leite condensado",
-    price: "R$ 8,00",
-    image: require("../assets/images/pudim-de-leite-condensado.jpeg"),
-  },
-  {
-    id: 8,
-    name: "Sorvete de Morango",
-    description: "Sorvete de morango",
-    price: "R$ 3,00",
-    image: require("../assets/images/sorvete-de-morango.jpeg"),
-  },
-];
+// O menu completo reflete as mesmas descrições acima
+export const menu = [...featured, ...drinks, ...desserts];
