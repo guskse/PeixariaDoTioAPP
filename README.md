@@ -1,51 +1,144 @@
-# Welcome to your Expo app 👋
+# 🐟 PeixariaDoTioAPP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo mobile desenvolvido com React Native utilizando Expo, com o objetivo de apresentar o cardápio de uma peixaria de forma simples, moderna e intuitiva.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 Sobre o projeto
 
-   ```bash
-   npm install
-   ```
+O **PeixariaDoTioAPP** é um aplicativo mobile que simula a experiência de um cliente visualizando:
 
-2. Start the app
+- 🍽️ Pratos disponíveis
+- 🥤 Bebidas (sucos)
+- 📖 Receitas
+- 📍 Localização do restaurante
+- ℹ️ Informações gerais
 
-   ```bash
-   npx expo start
-   ```
+O foco do projeto é **interface, navegação e experiência do usuário**.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Funcionalidades
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 🏠 **Home**
+  - Banner com imagem do restaurante
+  - Descrição do estabelecimento
+  - Destaques em grid
+  - Lista de bebidas
 
-## Get a fresh project
+- 🍽️ **Cardápio**
+  - Listagem de pratos com nome e preço
 
-When you're ready, run:
+- 📖 **Receitas**
+  - Lista de receitas
+  - Tela de detalhes
 
-```bash
-npm run reset-project
+- 📍 **Localização**
+  - Abertura do mapa via link
+
+- ℹ️ **Sobre**
+  - Informações do restaurante
+
+---
+
+## 🧱 Tecnologias utilizadas
+
+- React Native
+- Expo
+- Expo Router
+- StyleSheet (React Native)
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+app/
+ ├─ (tabs)/
+ │   ├─ index.js        # Home
+ │   ├─ menu.js         # Cardápio
+ │   ├─ recipes/
+ │   │    ├─ index.js
+ │   │    └─ [id].js
+ │   ├─ location.js
+ │   └─ about.js
+
+components/
+ └─ ProductCard.js
+
+data/
+ ├─ products.js
+ └─ recipes.js
+
+theme/
+ ├─ colors.js
+ ├─ spacing.js
+ └─ typography.js
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ▶️ Como rodar o projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Clone o repositório
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+git clone https://github.com/seu-usuario/PeixariaDoTioAPP.git
+cd PeixariaDoTioAPP
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+### 2. Instale as dependências
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# PeixariaDoTioAPP
+```
+npm install
+```
+
+---
+
+### 3. Inicie o projeto
+
+```
+npx expo start
+```
+
+---
+
+### 4. Execute no celular
+
+- Instale o app **Expo Go**
+- Escaneie o QR Code
+
+---
+
+## 🎨 Design
+
+O app utiliza um tema simples e consistente:
+
+- 🎨 Cores baseadas em tons de azul (tema marinho)
+- 🧱 Layout em grid para produtos
+- 🖼️ Imagens para melhor experiência visual
+
+---
+
+## 📌 Objetivo acadêmico
+
+Este projeto foi desenvolvido como parte de uma disciplina voltada ao desenvolvimento mobile, com foco em:
+
+- Estruturação de aplicações React Native
+- Navegação com Expo Router
+- Organização de componentes
+- Boas práticas de UI
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Gustavo Carvalho**
+
+---
+
+## 📄 Licença
+
+Este projeto é apenas para fins acadêmicos.
