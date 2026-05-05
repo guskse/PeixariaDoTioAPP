@@ -9,7 +9,7 @@ Aplicativo mobile desenvolvido com React Native utilizando Expo, com o objetivo 
 O **PeixariaDoTioAPP** é um aplicativo mobile que simula a experiência de um cliente visualizando:
 
 - 🍽️ Pratos disponíveis
-- 🥤 Bebidas (sucos)
+- 🥤 Bebidas e Sobremesas
 - 📖 Receitas
 - 📍 Localização do restaurante
 - ℹ️ Informações gerais
@@ -116,7 +116,7 @@ npx expo start
 
 O app utiliza um tema simples e consistente:
 
-- 🎨 Cores baseadas em tons de azul (tema marinho)
+- 🎨 Cores baseadas em tons de verde e marrom (tema amazônico)
 - 🧱 Layout em grid para produtos
 - 🖼️ Imagens para melhor experiência visual
 
