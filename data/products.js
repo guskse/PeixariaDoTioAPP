@@ -5,7 +5,7 @@ export const featured = [
     description:
       "Tambaqui da região assado na brasa, servido com baião de dois, farofa crocante e vinagrete.",
     price: "R$ 80,00",
-    image: require("../assets/images/mock.png"),
+    image: require("../assets/images/tambaqui-assado.jpeg"),
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const featured = [
     description:
       "Lombo de pirarucu frito na hora, acompanhado de baião de dois caseiro, farofa e salada.",
     price: "R$ 40,00",
-    image: require("../assets/images/mock.png"),
+    image: require("../assets/images/pirarucu-frito.png"),
   },
   {
     id: 3,
@@ -70,5 +70,4 @@ export const desserts = [
   },
 ];
 
-// O menu completo reflete as mesmas descrições acima
 export const menu = [...featured, ...drinks, ...desserts];

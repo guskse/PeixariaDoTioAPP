@@ -22,7 +22,7 @@ export const typography = {
     fontWeight: "bold",
   },
   subtitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "600",
   },
   text: {

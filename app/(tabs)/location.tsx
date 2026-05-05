@@ -6,8 +6,10 @@ export default function Location() {
   };
 
   return (
-    <View style={{ padding: 16 }}>
-      <Text>Endereço: Cidade Nova, próximo ao Shopping Sumaúma</Text>
+    <View style={{ padding: 16, flex: 1 }}>
+      <Text style={{ flex: 1 }}>
+        Endereço: Cidade Nova II, Av. Bpo Massa 116, 69095-160.
+      </Text>
       <Button title="Abrir no mapa" onPress={openMap} />
     </View>
   );

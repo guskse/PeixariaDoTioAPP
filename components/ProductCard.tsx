@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     marginRight: spacing.md,
     backgroundColor: colors.card,
     borderRadius: 12,
-
     elevation: 2,
   },
   image: {

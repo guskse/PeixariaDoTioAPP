@@ -1,22 +1,15 @@
-import { FlatList, Text } from "react-native";
-import Card from "../../components/Card";
-import { menu } from "../../data/products";
-import { colors, typography } from "../../theme";
+import MenuCard from "@/components/MenuCard";
+import { menu } from "@/data/products";
+import { FlatList, View } from "react-native";
 
-export default function Menu() {
+export default function Home() {
   return (
-    <FlatList
-      contentContainerStyle={{ padding: 16 }}
-      data={menu}
-      keyExtractor={(item) => item.id.toString()}
-      renderItem={({ item }) => (
-        <Card>
-          <Text style={typography.subtitle}>{item.name}</Text>
-          <Text style={{ color: colors.accent, marginTop: 8 }}>
-            {item.price}
-          </Text>
-        </Card>
-      )}
-    />
+    <View style={{ flex: 1, padding: 16 }}>
+      <FlatList
+        data={menu}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <MenuCard item={item} />}
+      />
+    </View>
   );
 }
